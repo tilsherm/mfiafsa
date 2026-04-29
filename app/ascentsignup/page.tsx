@@ -52,7 +52,7 @@ export default function AscentSignupPage() {
   return (
     <div className="bg-[#FAFBFC] min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen pt-28 pb-20 flex items-center justify-center overflow-hidden">
         <Image
           src="/images/ascent/mountain-climbers.png"
           alt="ASCENT Spouse Summit"
@@ -63,7 +63,7 @@ export default function AscentSignupPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/65 to-black/80" />
         
         {/* Floating date badge */}
-        <div className="absolute top-28 right-8 md:right-16 z-20">
+        <div className="absolute top-32 right-8 md:right-16 z-20">
           <div className="bg-white/95 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-xl">
             <p className="text-xs font-semibold text-[#ff7a27] uppercase tracking-wider">Save the Date</p>
             <p className="text-2xl font-bold text-[#0a2540]">Aug 9-11</p>
