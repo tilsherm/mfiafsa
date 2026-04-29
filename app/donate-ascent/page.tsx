@@ -150,7 +150,7 @@ export default function DonateAscentPage() {
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/images/academy/conference-audience.jpg"
-          alt="ASCENT Spouse Summit"
+          alt="ASCENT Spouse Gathering"
           fill
           className="object-cover"
           priority

@@ -54,8 +54,8 @@ export default function AscentSignupPage() {
       {/* Hero Section */}
       <section className="relative min-h-screen pt-28 pb-20 flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/ascent/hero-climbers.jpg"
-          alt="ASCENT Spouse Summit"
+          src="/images/ascent/team-circle.png"
+          alt="ASCENT Military Spouse Gathering"
           fill
           className="object-cover"
           priority
@@ -74,14 +74,14 @@ export default function AscentSignupPage() {
         <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
             <Mountain className="w-4 h-4 text-[#ff7a27]" />
-            <span className="text-white/90 text-sm font-medium">Inaugural Summit Experience</span>
+            <span className="text-white/90 text-sm font-medium">Inaugural Spouse Gathering</span>
           </div>
           
           <h1 className="text-5xl sm:text-7xl font-bold text-white mb-4 tracking-tight">
             ASCENT
           </h1>
           <p className="text-3xl sm:text-4xl text-white/90 font-light mb-2">
-            Spouse Summit
+            Military Spouse Gathering
           </p>
           
           <div className="flex items-center justify-center gap-3 text-[#ff7a27] text-2xl sm:text-3xl font-semibold my-8">
@@ -148,7 +148,7 @@ export default function AscentSignupPage() {
                 Military life requires constant adaptation—but rarely offers intentional leadership development for those holding everything together behind the scenes.
               </p>
               <p className="text-[#1F2933]/70 text-lg mb-6 leading-relaxed">
-                <strong className="text-[#066779]">The ASCENT Spouse Summit is designed to change that.</strong>
+                <strong className="text-[#066779]">The ASCENT Spouse Gathering is designed to change that.</strong>
               </p>
               <p className="text-[#1F2933]/60 leading-relaxed">
                 {"Hosted in partnership with the Air & Space Forces Association, this inaugural event brings military spouses together for focused growth, real connection, and practical leadership tools that apply directly to everyday life."}
@@ -321,7 +321,7 @@ export default function AscentSignupPage() {
               Part of the AFSA Summit Experience
             </h2>
             <p className="text-lg text-[#1F2933]/70 max-w-2xl mx-auto leading-relaxed">
-              The ASCENT Spouse Summit takes place alongside the Air & Space Forces Association Summit, giving participants access to a broader national leadership environment, professional expo resources, and partner organizations supporting military families.
+              The ASCENT Spouse Gathering takes place alongside the Air & Space Forces Association Summit, giving participants access to a broader national leadership environment, professional expo resources, and partner organizations supporting military families.
             </p>
           </div>
 
@@ -441,7 +441,7 @@ export default function AscentSignupPage() {
             Not just supporting—but leading.
           </p>
           <p className="text-lg text-white/70">
-            This summit equips you for that climb.
+            This gathering equips you for that climb.
           </p>
         </div>
       </section>
@@ -484,7 +484,7 @@ export default function AscentSignupPage() {
               </div>
               <h3 className="text-xl font-semibold text-[#0a2540] mb-3">Sponsor a Seat</h3>
               <p className="text-[#1F2933]/60 text-sm mb-6">
-                Fully sponsor a military spouse&apos;s summit experience, including travel support and accommodations assistance.
+                Fully sponsor a military spouse&apos;s gathering experience, including travel support and accommodations assistance.
               </p>
               <Button
                 asChild
@@ -540,7 +540,7 @@ export default function AscentSignupPage() {
           </div>
           
           <h2 className="text-4xl sm:text-6xl font-bold text-white mb-6 leading-tight">
-            Be Part of the First ASCENT Summit
+            Be Part of the First ASCENT Gathering
           </h2>
           <p className="text-xl text-white/80 mb-10 max-w-xl mx-auto">
             This is the inaugural experience—and the beginning of something bigger.

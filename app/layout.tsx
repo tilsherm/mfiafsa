@@ -6,6 +6,7 @@ import './globals.css'
 import { Header } from '@/components/header'
 import { FooterWrapper } from '@/components/footer-wrapper'
 import { ScrollToTop } from '@/components/scroll-to-top'
+import { AnnouncementBanner } from '@/components/announcement-banner'
 
 const plusJakarta = Plus_Jakarta_Sans({ 
   subsets: ["latin"],
@@ -52,6 +53,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${plusJakarta.variable} ${merriweather.variable} font-sans antialiased`} suppressHydrationWarning>
         <ScrollToTop />
+        <AnnouncementBanner />
         <Header />
         <main>{children}</main>
         <FooterWrapper />
