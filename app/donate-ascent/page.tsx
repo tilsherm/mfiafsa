@@ -147,7 +147,7 @@ export default function DonateAscentPage() {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[75vh] sm:min-h-[70vh] flex items-center justify-center overflow-hidden pb-16 sm:pb-0">
         <Image
           src="/images/academy/conference-audience.jpg"
           alt="ASCENT Spouse Gathering"
@@ -159,14 +159,14 @@ export default function DonateAscentPage() {
 
         <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <p 
-            className={`text-sm font-semibold tracking-[0.15em] uppercase mb-4 text-[#ff7a27] transition-all duration-1000 ${
+            className={`text-sm font-semibold tracking-[0.15em] uppercase mb-4 mt-12 sm:mt-16 text-[#ff7a27] transition-all duration-1000 ${
               heroVisible ? "opacity-100" : "opacity-0"
             }`}
           >
             Support the ASCENT Experience
           </p>
           <h1 
-            className={`text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 transition-all duration-1000 ${
+            className={`text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8 transition-all duration-1000 ${
               heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
@@ -394,7 +394,7 @@ export default function DonateAscentPage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#066779] mb-2">
-              Support the Mission of MFI
+              Support the <br className="sm:hidden" />Mission of MFI
             </h2>
             <div className="w-16 h-1 bg-[#5eb7bb] mx-auto mb-6" />
             <p className="text-xl text-[#066779] font-medium mb-4">
@@ -464,23 +464,23 @@ export default function DonateAscentPage() {
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-[#E8F4F5]/90" />
+        <div className="absolute inset-0 bg-[#0a2540]/80" />
         <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#066779] mb-2">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2">
             Why It Matters
           </h2>
-          <div className="w-16 h-1 bg-[#5eb7bb] mx-auto mb-8" />
+          <div className="w-16 h-1 bg-[#ff7a27] mx-auto mb-8" />
           
-          <p className="text-xl text-[#066779] font-medium mb-6">
+          <p className="text-xl text-white font-medium mb-6">
             Military readiness doesn&apos;t begin on the battlefield. It begins at home.
           </p>
           
-          <p className="text-lg text-[#1F2933]/80 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
             When spouses are supported, equipped, and connected: families are stronger, 
             communities are healthier, and service members are better supported.
           </p>
 
-          <p className="text-xl text-[#066779] font-semibold">
+          <p className="text-xl text-[#ff7a27] font-semibold">
             This isn&apos;t just support. It&apos;s an investment in the strength of the entire military ecosystem.
           </p>
         </div>
