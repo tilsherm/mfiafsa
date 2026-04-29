@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Instagram, Facebook, Linkedin } from "lucide-react"
 
 const quickLinks = [
+  { href: "/ascentsignup", label: "ASCENT Orlando" },
   { href: "/about", label: "About Us" },
   { href: "/book-a-call", label: "Book A Call" },
   { href: "/donate", label: "Donate" },

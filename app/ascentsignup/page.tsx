@@ -54,7 +54,7 @@ export default function AscentSignupPage() {
       {/* Hero Section */}
       <section className="relative min-h-screen pt-28 pb-20 flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/ascent/team-circle.png"
+          src="/images/ascent/team-circle-centered.jpg"
           alt="ASCENT Military Spouse Gathering"
           fill
           className="object-cover"
@@ -62,8 +62,8 @@ export default function AscentSignupPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/65 to-black/80" />
         
-        {/* Floating date badge */}
-        <div className="absolute top-32 right-8 md:right-16 z-20">
+        {/* Floating date badge - hidden on mobile */}
+        <div className="hidden md:block absolute top-32 right-8 md:right-16 z-20">
           <div className="bg-white/95 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-xl">
             <p className="text-xs font-semibold text-[#ff7a27] uppercase tracking-wider">Save the Date</p>
             <p className="text-2xl font-bold text-[#0a2540]">Aug 9-11</p>
@@ -121,7 +121,7 @@ export default function AscentSignupPage() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center pt-2">
             <div className="w-1.5 h-3 bg-white/60 rounded-full" />
           </div>
@@ -155,15 +155,14 @@ export default function AscentSignupPage() {
               </p>
             </div>
             <div className="relative">
-              <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/images/leadership-voice-group.jpg"
-                  alt="Leadership workshop participants"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-6 -left-6 bg-[#066779] text-white p-6 rounded-2xl shadow-xl max-w-[200px]">
+              <Image
+                src="/images/leadership-voice-group.jpg"
+                alt="Leadership workshop participants"
+                width={600}
+                height={450}
+                className="w-full h-auto rounded-3xl shadow-2xl"
+              />
+              <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:-left-6 bg-[#066779] text-white p-6 rounded-2xl shadow-xl max-w-[200px]">
                 <p className="text-3xl font-bold">3</p>
                 <p className="text-sm text-white/80">Days of Growth & Connection</p>
               </div>
@@ -402,12 +401,12 @@ export default function AscentSignupPage() {
       </section>
 
       {/* Why ASCENT Section */}
-      <section className="py-20 sm:py-28 relative overflow-hidden">
+      <section className="py-20 sm:py-28 relative overflow-hidden min-h-[600px] sm:min-h-0">
         <Image
           src="/images/academy/conference-peace.jpg"
           alt="Leadership training session"
           fill
-          className="object-cover"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-[#0a2540]/90" />
         <div
@@ -447,7 +446,7 @@ export default function AscentSignupPage() {
       </section>
 
       {/* Support the ASCENT Experience Section */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="pt-28 sm:pt-36 pb-20 sm:pb-28 bg-white">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm font-semibold tracking-[0.15em] uppercase mb-4 text-[#ff7a27]">
