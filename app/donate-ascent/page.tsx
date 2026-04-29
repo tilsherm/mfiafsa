@@ -459,8 +459,8 @@ export default function DonateAscentPage() {
       {/* Why It Matters Section */}
       <section className="relative py-24 overflow-hidden">
         <Image
-          src="/images/academy/training-session.jpg"
-          alt="Training session"
+          src="/images/family-walking.jpg"
+          alt="Military family"
           fill
           className="object-cover"
         />

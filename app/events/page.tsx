@@ -136,7 +136,7 @@ export default function EventsPage() {
                 size="lg"
                 className="bg-[#ff7a27] hover:bg-[#e86a1a] text-white font-semibold px-10 py-6 text-lg rounded-lg transition-all hover:shadow-xl"
               >
-                <Link href="/ascentregister">Register</Link>
+                <Link href="/ascentsignup">Learn More</Link>
               </Button>
             </div>
           </div>
