@@ -474,7 +474,7 @@ export default function AscentSignupPage() {
                 asChild
                 className="w-full bg-[#066779] hover:bg-[#055465] text-white font-semibold rounded-lg"
               >
-                <Link href="/donate">Give Now</Link>
+                <Link href="/donate-ascent">Give Now</Link>
               </Button>
             </div>
 
@@ -490,7 +490,7 @@ export default function AscentSignupPage() {
                 asChild
                 className="w-full bg-[#066779] hover:bg-[#055465] text-white font-semibold rounded-lg"
               >
-                <Link href="/donate">Become a Sponsor</Link>
+                <Link href="/donate-ascent">Become a Sponsor</Link>
               </Button>
             </div>
 
@@ -506,7 +506,7 @@ export default function AscentSignupPage() {
                 asChild
                 className="w-full bg-[#066779] hover:bg-[#055465] text-white font-semibold rounded-lg"
               >
-                <Link href="/donate">Partner With Us</Link>
+                <Link href="/donate-ascent">Partner With Us</Link>
               </Button>
             </div>
           </div>
