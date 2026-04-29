@@ -54,7 +54,7 @@ export default function AscentSignupPage() {
       {/* Hero Section */}
       <section className="relative min-h-screen pt-28 pb-20 flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/ascent/team-circle-centered.jpg"
+          src="/images/ascent/team-circle-bigcenter.jpg"
           alt="ASCENT Military Spouse Gathering"
           fill
           className="object-cover"
@@ -401,13 +401,15 @@ export default function AscentSignupPage() {
       </section>
 
       {/* Why ASCENT Section */}
-      <section className="py-20 sm:py-28 relative overflow-hidden min-h-[600px] sm:min-h-0">
-        <Image
-          src="/images/academy/conference-peace.jpg"
-          alt="Leadership training session"
-          fill
-          className="object-cover object-center"
-        />
+      <section className="py-20 sm:py-28 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/academy/conference-peace.jpg"
+            alt="Leadership training session"
+            fill
+            className="object-cover"
+          />
+        </div>
         <div className="absolute inset-0 bg-[#0a2540]/90" />
         <div
           ref={whyReveal.ref}
