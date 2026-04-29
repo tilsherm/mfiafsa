@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { MapPin, Calendar, Users, Sparkles, Heart, Target, Mountain, ArrowRight, Check } from "lucide-react"
+import { MapPin, Calendar, Users, Sparkles, Heart, Target, Mountain, ArrowRight, Check, Handshake } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
 function useReveal() {
@@ -443,6 +443,73 @@ export default function AscentSignupPage() {
           <p className="text-lg text-white/70">
             This summit equips you for that climb.
           </p>
+        </div>
+      </section>
+
+      {/* Support the ASCENT Experience Section */}
+      <section className="py-20 sm:py-28 bg-white">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-sm font-semibold tracking-[0.15em] uppercase mb-4 text-[#ff7a27]">
+              Make an Impact
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#0a2540] mb-6">
+              Support the ASCENT Experience
+            </h2>
+            <p className="text-lg text-[#1F2933]/70 max-w-2xl mx-auto">
+              ASCENT is offered at no cost to military spouses. Donations help make this leadership experience accessible to those who need it most.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-3 gap-6">
+            <div className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-[#E2E8F0]">
+              <div className="w-14 h-14 rounded-xl bg-[#066779]/10 group-hover:bg-[#ff7a27]/10 flex items-center justify-center mb-5 transition-colors duration-300">
+                <Heart className="w-7 h-7 text-[#066779] group-hover:text-[#ff7a27] transition-colors duration-300" />
+              </div>
+              <h3 className="text-xl font-semibold text-[#0a2540] mb-3">Support a Spouse</h3>
+              <p className="text-[#1F2933]/60 text-sm mb-6">
+                Your gift directly funds a military spouse&apos;s participation, covering registration, materials, and resources.
+              </p>
+              <Button
+                asChild
+                className="w-full bg-[#066779] hover:bg-[#055465] text-white font-semibold rounded-lg"
+              >
+                <Link href="/donate">Give Now</Link>
+              </Button>
+            </div>
+
+            <div className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-[#E2E8F0]">
+              <div className="w-14 h-14 rounded-xl bg-[#066779]/10 group-hover:bg-[#ff7a27]/10 flex items-center justify-center mb-5 transition-colors duration-300">
+                <Users className="w-7 h-7 text-[#066779] group-hover:text-[#ff7a27] transition-colors duration-300" />
+              </div>
+              <h3 className="text-xl font-semibold text-[#0a2540] mb-3">Sponsor a Seat</h3>
+              <p className="text-[#1F2933]/60 text-sm mb-6">
+                Fully sponsor a military spouse&apos;s summit experience, including travel support and accommodations assistance.
+              </p>
+              <Button
+                asChild
+                className="w-full bg-[#066779] hover:bg-[#055465] text-white font-semibold rounded-lg"
+              >
+                <Link href="/donate">Become a Sponsor</Link>
+              </Button>
+            </div>
+
+            <div className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-[#E2E8F0]">
+              <div className="w-14 h-14 rounded-xl bg-[#066779]/10 group-hover:bg-[#ff7a27]/10 flex items-center justify-center mb-5 transition-colors duration-300">
+                <Handshake className="w-7 h-7 text-[#066779] group-hover:text-[#ff7a27] transition-colors duration-300" />
+              </div>
+              <h3 className="text-xl font-semibold text-[#0a2540] mb-3">Partner with the Mission</h3>
+              <p className="text-[#1F2933]/60 text-sm mb-6">
+                Join as an organizational partner to support multiple spouses and expand the reach of this transformative experience.
+              </p>
+              <Button
+                asChild
+                className="w-full bg-[#066779] hover:bg-[#055465] text-white font-semibold rounded-lg"
+              >
+                <Link href="/donate">Partner With Us</Link>
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
