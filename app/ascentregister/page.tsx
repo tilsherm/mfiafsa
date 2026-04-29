@@ -10,14 +10,16 @@ export default function AscentRegisterPage() {
   return (
     <div className="bg-[#FAFBFC] min-h-screen">
       {/* Header with background image */}
-      <section className="relative pt-28 pb-16 sm:pt-32 sm:pb-20 overflow-hidden">
-        <Image
-          src="/images/academy/conference-peace.jpg"
-          alt="Leadership training session"
-          fill
-          className="object-cover"
-          priority
-        />
+      <section className="relative pt-28 pb-16 sm:pt-32 sm:pb-20 overflow-hidden min-h-[50vh] sm:min-h-0">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/academy/conference-peace.jpg"
+            alt="Leadership training session"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
         <div className="absolute inset-0 bg-[#066779]/80" />
         <div className="relative z-10 mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-sm font-semibold tracking-[0.15em] uppercase mb-4 text-[#ff7a27]">
