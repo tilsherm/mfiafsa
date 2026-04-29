@@ -142,7 +142,7 @@ export default function AscentSignupPage() {
                 What This Is
               </p>
               <h2 className="text-3xl sm:text-4xl font-bold text-[#0a2540] mb-6 leading-tight">
-                {"This Is More Than a Summit—It's a Starting Point"}
+                {"This Is More Than a Summit. It's a Starting Point"}
               </h2>
               <p className="text-[#1F2933]/70 text-lg mb-6 leading-relaxed">
                 Military life requires constant adaptation—but rarely offers intentional leadership development for those holding everything together behind the scenes.
