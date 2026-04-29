@@ -26,15 +26,23 @@ const eventsDropdown = [
   { label: "Family Leader Program", href: "/events#family-leader" },
 ]
 
+const donateDropdown = [
+  { label: "Support Military Families", href: "/donate" },
+  { label: "Sponsor a Spouse for ASCENT", href: "/donate-ascent" },
+]
+
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isProgramsOpen, setIsProgramsOpen] = useState(false)
   const [isEventsOpen, setIsEventsOpen] = useState(false)
+  const [isDonateOpen, setIsDonateOpen] = useState(false)
   const [isMobileProgramsOpen, setIsMobileProgramsOpen] = useState(false)
   const [isMobileEventsOpen, setIsMobileEventsOpen] = useState(false)
+  const [isMobileDonateOpen, setIsMobileDonateOpen] = useState(false)
   const programsRef = useRef<HTMLDivElement>(null)
   const eventsRef = useRef<HTMLDivElement>(null)
+  const donateRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,6 +60,9 @@ export function Header() {
       }
       if (eventsRef.current && !eventsRef.current.contains(e.target as Node)) {
         setIsEventsOpen(false)
+      }
+      if (donateRef.current && !donateRef.current.contains(e.target as Node)) {
+        setIsDonateOpen(false)
       }
     }
     document.addEventListener("mousedown", handleClickOutside)
@@ -144,12 +155,31 @@ export function Header() {
               )}
             </div>
 
-            <Link
-              href="/donate"
-              className="text-sm lg:text-base text-[#1F2933] hover:text-[#066779] font-medium transition-colors whitespace-nowrap"
-            >
-              Donate
-            </Link>
+            {/* Donate Dropdown */}
+            <div ref={donateRef} className="relative">
+              <button
+                type="button"
+                onClick={() => setIsDonateOpen(!isDonateOpen)}
+                className="flex items-center gap-1 text-sm lg:text-base text-[#1F2933] hover:text-[#066779] font-medium transition-colors whitespace-nowrap"
+              >
+                Donate
+                <ChevronDown className={cn("h-4 w-4 transition-transform", isDonateOpen && "rotate-180")} />
+              </button>
+              {isDonateOpen && (
+                <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-[#1F2933]/10 py-2 z-50">
+                  {donateDropdown.map((item) => (
+                    <Link
+                      key={item.label}
+                      href={item.href}
+                      className="block w-full text-left px-4 py-2.5 text-sm text-[#1F2933] hover:bg-[#066779]/5 hover:text-[#066779] transition-colors"
+                      onClick={() => setIsDonateOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
             <Button
               asChild
               className="bg-[#ff7a27] hover:bg-[#e86a1a] text-white font-semibold px-6 rounded-md transition-all hover:shadow-md"
@@ -237,13 +267,31 @@ export function Header() {
               )}
             </div>
 
-            <Link
-              href="/donate"
-              className="text-[#1F2933] hover:text-[#066779] font-medium py-2 transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Donate
-            </Link>
+            {/* Mobile Donate Dropdown */}
+            <div>
+              <button
+                type="button"
+                onClick={() => setIsMobileDonateOpen(!isMobileDonateOpen)}
+                className="flex items-center gap-1 text-[#1F2933] hover:text-[#066779] font-medium py-2 transition-colors w-full"
+              >
+                Donate
+                <ChevronDown className={cn("h-4 w-4 transition-transform", isMobileDonateOpen && "rotate-180")} />
+              </button>
+              {isMobileDonateOpen && (
+                <div className="pl-4 flex flex-col gap-2 mt-1">
+                  {donateDropdown.map((item) => (
+                    <Link
+                      key={item.label}
+                      href={item.href}
+                      className="text-left text-[#1F2933]/70 hover:text-[#066779] font-medium py-1.5 text-sm transition-colors"
+                      onClick={() => { setIsMobileDonateOpen(false); setIsMobileMenuOpen(false) }}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
             <Button
               asChild
               className="bg-[#ff7a27] hover:bg-[#e86a1a] text-white font-semibold rounded-md w-full transition-all"

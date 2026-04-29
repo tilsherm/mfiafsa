@@ -54,10 +54,10 @@ export default function AscentSignupPage() {
       {/* Hero Section */}
       <section className="relative min-h-screen pt-28 pb-20 flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/ascent/team-circle.png"
+          src="/images/ascent/team-circle-left.jpg"
           alt="ASCENT Military Spouse Gathering"
           fill
-          className="object-cover"
+          className="object-cover object-left"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/65 to-black/80" />
@@ -160,7 +160,7 @@ export default function AscentSignupPage() {
                   src="/images/leadership-voice-group.jpg"
                   alt="Leadership workshop participants"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-[#066779] text-white p-6 rounded-2xl shadow-xl max-w-[200px]">
@@ -447,7 +447,7 @@ export default function AscentSignupPage() {
       </section>
 
       {/* Support the ASCENT Experience Section */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="pt-28 sm:pt-36 pb-20 sm:pb-28 bg-white">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm font-semibold tracking-[0.15em] uppercase mb-4 text-[#ff7a27]">

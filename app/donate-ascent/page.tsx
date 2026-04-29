@@ -229,7 +229,7 @@ export default function DonateAscentPage() {
               </div>
             </div>
 
-            <p className="text-xl text-[#066779] font-medium mb-4 text-center">
+            <p className="text-xl text-[#066779] font-medium mb-8 text-center">
               Sponsor a Spouse. Change the Experience.
             </p>
             
