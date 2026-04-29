@@ -121,7 +121,7 @@ export default function AscentSignupPage() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center pt-2">
             <div className="w-1.5 h-3 bg-white/60 rounded-full" />
           </div>
@@ -155,14 +155,13 @@ export default function AscentSignupPage() {
               </p>
             </div>
             <div className="relative">
-              <div className="aspect-[3/4] sm:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/images/leadership-voice-group.jpg"
-                  alt="Leadership workshop participants"
-                  fill
-                  className="object-contain sm:object-cover sm:object-top"
-                />
-              </div>
+              <Image
+                src="/images/leadership-voice-group.jpg"
+                alt="Leadership workshop participants"
+                width={600}
+                height={450}
+                className="w-full h-auto rounded-3xl shadow-2xl"
+              />
               <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:-left-6 bg-[#066779] text-white p-6 rounded-2xl shadow-xl max-w-[200px]">
                 <p className="text-3xl font-bold">3</p>
                 <p className="text-sm text-white/80">Days of Growth & Connection</p>
