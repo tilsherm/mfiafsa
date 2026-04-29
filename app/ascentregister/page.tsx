@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export const metadata = {
   title: "Register for ASCENT | Military Family Institute",
-  description: "Register for the 2026 ASCENT Spouse Summit - August 9-11, Orlando Hilton",
+  description: "Register for the 2026 ASCENT Spouse Gathering - August 9-11, Orlando Hilton",
 }
 
 export default function AscentRegisterPage() {
@@ -24,10 +24,10 @@ export default function AscentRegisterPage() {
             August 9-11, 2026 | Orlando Hilton
           </p>
           <h1 className="text-3xl sm:text-5xl font-bold text-white mb-4 text-balance">
-            Register for the 2026 ASCENT Spouse Summit
+            Register for the 2026 ASCENT Spouse Gathering
           </h1>
           <p className="text-white/80 text-lg">
-            Complete the form below to reserve your seat at our inaugural summit.
+            Complete the form below to reserve your seat at our inaugural gathering.
           </p>
         </div>
       </section>

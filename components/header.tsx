@@ -17,15 +17,24 @@ const navLinks = [
 const programsDropdown = [
   { label: "Spouse Academy", href: "/spouse-academy" },
   { label: "Family Support", href: "/family-support" },
-  { label: "ASCENT Summit", href: "/ascentsignup" },
+  { label: "ASCENT Orlando", href: "/ascentsignup" },
+]
+
+const eventsDropdown = [
+  { label: "Spouse Academy", href: "/events#spouse-academy" },
+  { label: "ASCENT Orlando", href: "/events#ascent-orlando" },
+  { label: "Family Leader Program", href: "/events#family-leader" },
 ]
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isProgramsOpen, setIsProgramsOpen] = useState(false)
+  const [isEventsOpen, setIsEventsOpen] = useState(false)
   const [isMobileProgramsOpen, setIsMobileProgramsOpen] = useState(false)
+  const [isMobileEventsOpen, setIsMobileEventsOpen] = useState(false)
   const programsRef = useRef<HTMLDivElement>(null)
+  const eventsRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,11 +44,14 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  // Close desktop dropdown when clicking outside
+  // Close desktop dropdowns when clicking outside
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (programsRef.current && !programsRef.current.contains(e.target as Node)) {
         setIsProgramsOpen(false)
+      }
+      if (eventsRef.current && !eventsRef.current.contains(e.target as Node)) {
+        setIsEventsOpen(false)
       }
     }
     document.addEventListener("mousedown", handleClickOutside)
@@ -106,15 +118,38 @@ export function Header() {
               )}
             </div>
 
-            {navLinks.slice(2).map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm lg:text-base text-[#1F2933] hover:text-[#066779] font-medium transition-colors whitespace-nowrap"
+            {/* Events Dropdown */}
+            <div ref={eventsRef} className="relative">
+              <button
+                type="button"
+                onClick={() => setIsEventsOpen(!isEventsOpen)}
+                className="flex items-center gap-1 text-sm lg:text-base text-[#1F2933] hover:text-[#066779] font-medium transition-colors whitespace-nowrap"
               >
-                {link.label}
-              </Link>
-            ))}
+                Events
+                <ChevronDown className={cn("h-4 w-4 transition-transform", isEventsOpen && "rotate-180")} />
+              </button>
+              {isEventsOpen && (
+                <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-[#1F2933]/10 py-2 z-50">
+                  {eventsDropdown.map((item) => (
+                    <Link
+                      key={item.label}
+                      href={item.href}
+                      className="block w-full text-left px-4 py-2.5 text-sm text-[#1F2933] hover:bg-[#066779]/5 hover:text-[#066779] transition-colors"
+                      onClick={() => setIsEventsOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <Link
+              href="/donate"
+              className="text-sm lg:text-base text-[#1F2933] hover:text-[#066779] font-medium transition-colors whitespace-nowrap"
+            >
+              Donate
+            </Link>
             <Button
               asChild
               className="bg-[#ff7a27] hover:bg-[#e86a1a] text-white font-semibold px-6 rounded-md transition-all hover:shadow-md"
@@ -176,16 +211,39 @@ export function Header() {
               )}
             </div>
 
-            {navLinks.slice(2).map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-[#1F2933] hover:text-[#066779] font-medium py-2 transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
+            {/* Mobile Events Dropdown */}
+            <div>
+              <button
+                type="button"
+                onClick={() => setIsMobileEventsOpen(!isMobileEventsOpen)}
+                className="flex items-center gap-1 text-[#1F2933] hover:text-[#066779] font-medium py-2 transition-colors w-full"
               >
-                {link.label}
-              </Link>
-            ))}
+                Events
+                <ChevronDown className={cn("h-4 w-4 transition-transform", isMobileEventsOpen && "rotate-180")} />
+              </button>
+              {isMobileEventsOpen && (
+                <div className="pl-4 flex flex-col gap-2 mt-1">
+                  {eventsDropdown.map((item) => (
+                    <Link
+                      key={item.label}
+                      href={item.href}
+                      className="text-left text-[#1F2933]/70 hover:text-[#066779] font-medium py-1.5 text-sm transition-colors"
+                      onClick={() => { setIsMobileEventsOpen(false); setIsMobileMenuOpen(false) }}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <Link
+              href="/donate"
+              className="text-[#1F2933] hover:text-[#066779] font-medium py-2 transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Donate
+            </Link>
             <Button
               asChild
               className="bg-[#ff7a27] hover:bg-[#e86a1a] text-white font-semibold rounded-md w-full transition-all"

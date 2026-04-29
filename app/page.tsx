@@ -5,10 +5,12 @@ import { WhoWeAreSection } from "@/components/home/who-we-are-section"
 import { WhatWeOfferSection } from "@/components/home/what-we-offer-section"
 import { TestimonialsSection } from "@/components/home/testimonials-section"
 import { WhyThisMattersSection } from "@/components/home/why-this-matters-section"
+import { NewsletterPopup } from "@/components/newsletter-popup"
 
 export default function HomePage() {
   return (
     <>
+      <NewsletterPopup />
       <HeroSection />
 
       {/* 501(c)(3) Badge */}
