@@ -54,7 +54,7 @@ export default function AscentSignupPage() {
       {/* Hero Section */}
       <section className="relative min-h-screen pt-28 pb-20 flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/ascent/mountain-climbers.png"
+          src="/images/ascent/hero-climbers.jpg"
           alt="ASCENT Spouse Summit"
           fill
           className="object-cover"
@@ -258,7 +258,7 @@ export default function AscentSignupPage() {
       {/* Event Details Section */}
       <section className="py-20 sm:py-28 relative overflow-hidden">
         <Image
-          src="/images/ascent/orlando-night.png"
+          src="/images/ascent/orlando-night-new.jpg"
           alt="Orlando at night"
           fill
           className="object-cover"
@@ -326,14 +326,14 @@ export default function AscentSignupPage() {
           </div>
 
           {/* AFSA Partnership */}
-          <div className="bg-[#f7f8fa] rounded-2xl p-8 text-center mb-10">
-            <p className="text-sm text-[#1F2933]/60 mb-4">Hosted in partnership with</p>
+          <div className="text-center mb-12">
+            <p className="text-sm text-[#1F2933]/60 mb-6">Hosted in partnership with</p>
             <Link href="https://www.hqafsa.org/summit26.html" target="_blank" rel="noopener noreferrer">
               <Image
                 src="/images/partners/summit-365.png"
                 alt="Air & Space Forces Association Summit 2026"
-                width={200}
-                height={80}
+                width={320}
+                height={128}
                 className="mx-auto hover:opacity-80 transition-opacity"
               />
             </Link>
@@ -345,10 +345,10 @@ export default function AscentSignupPage() {
               href="https://www.hqafsa.org/summit26.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-4 p-5 bg-white rounded-xl border border-[#E2E8F0] hover:border-[#066779] hover:shadow-md transition-all group"
+              className="flex items-center gap-4 p-5 bg-white rounded-xl border border-[#E2E8F0] hover:border-[#ff7a27] hover:shadow-md transition-all group"
             >
-              <div className="w-10 h-10 rounded-lg bg-[#066779]/10 flex items-center justify-center group-hover:bg-[#066779]/20 transition-colors">
-                <ArrowRight className="w-5 h-5 text-[#066779]" />
+              <div className="w-10 h-10 rounded-lg bg-[#ff7a27]/10 flex items-center justify-center group-hover:bg-[#ff7a27]/20 transition-colors">
+                <ArrowRight className="w-5 h-5 text-[#ff7a27]" />
               </div>
               <div>
                 <p className="font-semibold text-[#0a2540]">AFSA Summit 2026</p>
@@ -359,10 +359,10 @@ export default function AscentSignupPage() {
               href="https://www.hqafsa.org/afsa_summit26_sponsor_exhibitor_info.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-4 p-5 bg-white rounded-xl border border-[#E2E8F0] hover:border-[#066779] hover:shadow-md transition-all group"
+              className="flex items-center gap-4 p-5 bg-white rounded-xl border border-[#E2E8F0] hover:border-[#ff7a27] hover:shadow-md transition-all group"
             >
-              <div className="w-10 h-10 rounded-lg bg-[#066779]/10 flex items-center justify-center group-hover:bg-[#066779]/20 transition-colors">
-                <ArrowRight className="w-5 h-5 text-[#066779]" />
+              <div className="w-10 h-10 rounded-lg bg-[#ff7a27]/10 flex items-center justify-center group-hover:bg-[#ff7a27]/20 transition-colors">
+                <ArrowRight className="w-5 h-5 text-[#ff7a27]" />
               </div>
               <div>
                 <p className="font-semibold text-[#0a2540]">Sponsor / Exhibitor Info</p>
@@ -373,10 +373,10 @@ export default function AscentSignupPage() {
               href="https://www.hilton.com/en/hotels/mcaborlhh-hilton-orlando/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-4 p-5 bg-white rounded-xl border border-[#E2E8F0] hover:border-[#066779] hover:shadow-md transition-all group"
+              className="flex items-center gap-4 p-5 bg-white rounded-xl border border-[#E2E8F0] hover:border-[#ff7a27] hover:shadow-md transition-all group"
             >
-              <div className="w-10 h-10 rounded-lg bg-[#066779]/10 flex items-center justify-center group-hover:bg-[#066779]/20 transition-colors">
-                <ArrowRight className="w-5 h-5 text-[#066779]" />
+              <div className="w-10 h-10 rounded-lg bg-[#ff7a27]/10 flex items-center justify-center group-hover:bg-[#ff7a27]/20 transition-colors">
+                <ArrowRight className="w-5 h-5 text-[#ff7a27]" />
               </div>
               <div>
                 <p className="font-semibold text-[#0a2540]">Hilton Host Hotel</p>
@@ -387,10 +387,10 @@ export default function AscentSignupPage() {
               href="https://book.passkey.com/event/51219755/owner/213/home"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-4 p-5 bg-white rounded-xl border border-[#E2E8F0] hover:border-[#066779] hover:shadow-md transition-all group"
+              className="flex items-center gap-4 p-5 bg-white rounded-xl border border-[#E2E8F0] hover:border-[#ff7a27] hover:shadow-md transition-all group"
             >
-              <div className="w-10 h-10 rounded-lg bg-[#066779]/10 flex items-center justify-center group-hover:bg-[#066779]/20 transition-colors">
-                <ArrowRight className="w-5 h-5 text-[#066779]" />
+              <div className="w-10 h-10 rounded-lg bg-[#ff7a27]/10 flex items-center justify-center group-hover:bg-[#ff7a27]/20 transition-colors">
+                <ArrowRight className="w-5 h-5 text-[#ff7a27]" />
               </div>
               <div>
                 <p className="font-semibold text-[#0a2540]">Overflow Hotel</p>
@@ -402,10 +402,17 @@ export default function AscentSignupPage() {
       </section>
 
       {/* Why ASCENT Section */}
-      <section className="py-20 sm:py-28 bg-[#f7f8fa]">
+      <section className="py-20 sm:py-28 relative overflow-hidden">
+        <Image
+          src="/images/academy/conference-peace.jpg"
+          alt="Leadership training session"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-[#0a2540]/80" />
         <div
           ref={whyReveal.ref}
-          className={`mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center transition-all duration-700 ${
+          className={`relative z-10 mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center transition-all duration-700 ${
             whyReveal.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -421,35 +428,26 @@ export default function AscentSignupPage() {
           <p className="text-xs font-semibold tracking-[0.15em] uppercase mb-4 text-[#ff7a27]">
             Why ASCENT
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#0a2540] mb-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
             The Journey You&apos;re Already On
           </h2>
-          <p className="text-xl text-[#1F2933]/70 mb-6 leading-relaxed">
+          <p className="text-xl text-white/80 mb-6 leading-relaxed">
             ASCENT represents the journey military spouses are already on.
           </p>
-          <p className="text-2xl font-semibold text-[#066779] mb-4">
+          <p className="text-2xl font-semibold text-[#ff7a27] mb-4">
             Not just enduring—but rising.
           </p>
-          <p className="text-2xl font-semibold text-[#066779] mb-8">
+          <p className="text-2xl font-semibold text-[#ff7a27] mb-8">
             Not just supporting—but leading.
           </p>
-          <p className="text-lg text-[#1F2933]/60">
+          <p className="text-lg text-white/70">
             This summit equips you for that climb.
           </p>
         </div>
       </section>
 
       {/* Final CTA Section */}
-      <section id="register" className="py-24 sm:py-32 relative overflow-hidden">
-        {/* Background image - Yolanda teaching */}
-        <Image
-          src="/images/academy/conference-peace.jpg"
-          alt="Leadership training session"
-          fill
-          className="object-cover"
-        />
-        {/* Dark teal overlay */}
-        <div className="absolute inset-0 bg-[#066779]/85" />
+      <section id="register" className="py-24 sm:py-32 relative overflow-hidden bg-gradient-to-br from-[#0a2540] to-[#066779]">
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-[#ff7a27]/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#066779]/30 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
