@@ -409,7 +409,7 @@ export default function AscentSignupPage() {
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-[#0a2540]/80" />
+        <div className="absolute inset-0 bg-[#0a2540]/90" />
         <div
           ref={whyReveal.ref}
           className={`relative z-10 mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center transition-all duration-700 ${
