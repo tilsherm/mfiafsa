@@ -514,7 +514,16 @@ export default function AscentSignupPage() {
       </section>
 
       {/* Final CTA Section */}
-      <section id="register" className="py-24 sm:py-32 relative overflow-hidden bg-gradient-to-br from-[#0a2540] to-[#066779]">
+      <section id="register" className="py-24 sm:py-32 relative overflow-hidden">
+        {/* Background image */}
+        <Image
+          src="/images/academy/conference-audience.jpg"
+          alt="Conference audience"
+          fill
+          className="object-cover"
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-[#0a2540]/80" />
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-[#ff7a27]/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#066779]/30 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
