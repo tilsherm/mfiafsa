@@ -356,7 +356,7 @@ export default function AscentSignupPage() {
               </div>
             </Link>
             <Link
-              href="https://www.hqafsa.org/afsa_summit26_sponsor_exhibitor_info.pdf"
+              href="https://www.hqafsa.org/uploads/3/8/9/1/38911523/afsa_summit26_sponsor_exhibitor_info.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-5 bg-white rounded-xl border border-[#E2E8F0] hover:border-[#ff7a27] hover:shadow-md transition-all group"
@@ -370,7 +370,7 @@ export default function AscentSignupPage() {
               </div>
             </Link>
             <Link
-              href="https://www.hilton.com/en/hotels/mcaborlhh-hilton-orlando/"
+              href="https://thehiltonorlando.com/about/hotel-policies-information/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-5 bg-white rounded-xl border border-[#E2E8F0] hover:border-[#ff7a27] hover:shadow-md transition-all group"

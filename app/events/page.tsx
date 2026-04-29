@@ -88,13 +88,21 @@ export default function EventsPage() {
               ))}
             </div>
 
-            <div className="flex justify-center">
+            <div className="flex flex-wrap justify-center gap-4">
               <Button
                 asChild
                 size="lg"
                 className="bg-[#ff7a27] hover:bg-[#e86a1a] text-white font-semibold px-10 py-6 text-lg rounded-lg transition-all hover:shadow-xl"
               >
                 <Link href="/book-a-call">Book a Call</Link>
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="border-[#066779] text-[#066779] hover:bg-[#066779] hover:text-white font-semibold px-10 py-6 text-lg rounded-lg transition-all"
+              >
+                <Link href="/spouse-academy">Learn More</Link>
               </Button>
             </div>
           </div>
@@ -176,13 +184,21 @@ export default function EventsPage() {
               ))}
             </div>
 
-            <div className="flex justify-center">
+            <div className="flex flex-wrap justify-center gap-4">
               <Button
                 asChild
                 size="lg"
                 className="bg-[#ff7a27] hover:bg-[#e86a1a] text-white font-semibold px-10 py-6 text-lg rounded-lg transition-all hover:shadow-xl"
               >
                 <Link href="/book-a-call">Book a Call</Link>
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="border-[#066779] text-[#066779] hover:bg-[#066779] hover:text-white font-semibold px-10 py-6 text-lg rounded-lg transition-all"
+              >
+                <Link href="/family-support">Learn More</Link>
               </Button>
             </div>
           </div>

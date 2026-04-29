@@ -156,11 +156,6 @@ export default function DonateAscentPage() {
           priority
         />
         <div className="absolute inset-0 bg-[#0a2540]/75" />
-        
-        <div 
-          className="absolute bottom-0 left-0 right-0 h-32"
-          style={{ background: 'linear-gradient(to top, #ffffff, transparent)' }}
-        />
 
         <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <p 
@@ -199,7 +194,7 @@ export default function DonateAscentPage() {
               size="lg"
               className="bg-[#ff7a27] hover:bg-[#e86a1a] text-white font-semibold px-10 py-6 text-lg rounded-lg transition-all hover:shadow-xl"
             >
-              <a href="https://www.zeffy.com/en-US/donation-form/test-180" target="_blank" rel="noopener noreferrer">Donate Now</a>
+              <a href="https://www.zeffy.com/en-US/donation-form/the-ascent-orlando-military-spouse-gathering" target="_blank" rel="noopener noreferrer">Donate Now</a>
             </Button>
             <TrustIndicator />
           </div>
@@ -209,26 +204,21 @@ export default function DonateAscentPage() {
       {/* Support The Ascent Section */}
       <section ref={sponsorRef} className="py-24 bg-white">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <img
-              src="/images/mfi-shield-logo.png"
-              alt="Military Family Institute"
-              className="h-20 w-auto mx-auto mb-6"
-            />
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#066779] mb-2">
+          <div className="mb-16">
+            <div className="flex justify-center">
+              <img
+                src="/images/mfi-shield-logo.png"
+                alt="Military Family Institute"
+                className="h-20 w-auto mb-6"
+              />
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#066779] mb-2 text-center">
               Support The ASCENT Spouse Gathering
             </h2>
-            <div className="w-16 h-1 bg-[#5eb7bb] mx-auto mb-6" />
-            <p className="text-xl text-[#066779] font-medium mb-4">
-              Sponsor a Spouse. Change the Experience.
-            </p>
-            <p className="text-lg text-[#1F2933]/70 max-w-3xl mx-auto mb-6">
-              The ASCENT is a Military Spouse Development Gathering hosted by the Military Family Institute 
-              in partnership with AFSA.
-            </p>
+            <div className="w-16 h-1 bg-[#5eb7bb] mx-auto mb-4" />
             
-            {/* Event Details */}
-            <div className="flex flex-wrap items-center justify-center gap-6 mb-8">
+            {/* Event Details - moved higher */}
+            <div className="flex flex-wrap items-center justify-center gap-6 mb-6">
               <div className="flex items-center gap-2 text-[#066779]">
                 <MapPin className="w-5 h-5 text-[#ff7a27]" />
                 <span className="font-medium">Hilton Orlando, Florida</span>
@@ -239,17 +229,29 @@ export default function DonateAscentPage() {
               </div>
             </div>
 
-            <p className="text-[#1F2933]/70 max-w-2xl mx-auto">
-              This gathering brings together spouses from all branches and all stages of military life 
-              for leadership development, connection, and growth.
-              <span className="block mt-4 font-medium text-[#066779]">
-                For many, the barrier isn&apos;t interest—it&apos;s access. Your donation removes that barrier.
-              </span>
+            <p className="text-xl text-[#066779] font-medium mb-4 text-center">
+              Sponsor a Spouse. Change the Experience.
             </p>
+            
+            {/* Left-aligned paragraph text */}
+            <div className="max-w-3xl mx-auto text-left">
+              <p className="text-lg text-[#1F2933]/70 mb-4">
+                The ASCENT is a Military Spouse Development Gathering hosted by the Military Family Institute 
+                in partnership with AFSA.
+              </p>
+              <p className="text-[#1F2933]/70 mb-4">
+                This gathering brings together spouses from all branches and all stages of military life 
+                for leadership development, connection, and growth.
+              </p>
+              <p className="text-[#1F2933]/70">
+                For many, the barrier isn&apos;t interest—it&apos;s access. 
+                <span className="font-medium text-[#066779]"> Your donation removes that barrier.</span>
+              </p>
+            </div>
           </div>
 
           {/* What Your Gift Does */}
-          <div className="bg-[#E8F4F5] rounded-2xl p-8 mb-12">
+          <div className="bg-[#E8F4F5] rounded-2xl p-10 sm:p-12 mb-12">
             <h3 className="text-xl font-semibold text-[#066779] text-center mb-6">
               When you give, you help:
             </h3>
@@ -280,12 +282,15 @@ export default function DonateAscentPage() {
             <h3 className="text-2xl font-bold text-[#066779] text-center mb-2">
               Individual Giving (Sponsor a Spouse)
             </h3>
-            <p className="text-center text-[#1F2933]/70 mb-8">Every contribution matters.</p>
+            <p className="text-center text-[#1F2933]/70 mb-4">Every contribution matters.</p>
+            <p className="text-center text-[#066779] text-sm max-w-2xl mx-auto mb-8 italic">
+              ASCENT is provided at no cost to military spouses. Your contribution directly supports access, materials, and leadership development delivery.
+            </p>
 
             <div className="grid sm:grid-cols-3 gap-6 items-end">
               {sponsorLevels.map((level, index) => (
                 <a
-                  href="https://www.zeffy.com/en-US/donation-form/test-180"
+                  href="https://www.zeffy.com/en-US/donation-form/the-ascent-orlando-military-spouse-gathering"
                   target="_blank"
                   rel="noopener noreferrer"
                   key={level.amount}
@@ -324,7 +329,7 @@ export default function DonateAscentPage() {
                 size="lg"
                 className="bg-[#ff7a27] hover:bg-[#e86a1a] text-white font-semibold px-10 py-6 text-lg rounded-lg transition-all hover:shadow-xl"
               >
-                <a href="https://www.zeffy.com/en-US/donation-form/test-180" target="_blank" rel="noopener noreferrer">Donate Now</a>
+                <a href="https://www.zeffy.com/en-US/donation-form/the-ascent-orlando-military-spouse-gathering" target="_blank" rel="noopener noreferrer">Donate Now</a>
               </Button>
               <TrustIndicatorDark />
             </div>
@@ -348,11 +353,11 @@ export default function DonateAscentPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {impactLevels.map((level, index) => (
               <a
-                href="https://www.zeffy.com/en-US/donation-form/test-180"
+                href="https://www.zeffy.com/en-US/donation-form/the-ascent-orlando-military-spouse-gathering"
                 target="_blank"
                 rel="noopener noreferrer"
                 key={level.amount}
-                className={`bg-white/10 backdrop-blur-sm rounded-xl p-8 text-center transition-all duration-500 hover:-translate-y-2 hover:bg-white/15 cursor-pointer block border border-white/20 ${
+                className={`bg-white rounded-xl p-8 text-center transition-all duration-500 hover:-translate-y-2 hover:shadow-xl cursor-pointer block ${
                   impactVisible 
                     ? "opacity-100 translate-y-0" 
                     : "opacity-0 translate-y-8"
@@ -360,8 +365,8 @@ export default function DonateAscentPage() {
                 style={{ transitionDelay: `${index * 150}ms` }}
               >
                 <p className="text-4xl font-bold text-[#ff7a27] mb-3">{level.amount}</p>
-                <h3 className="text-xl font-semibold text-white mb-3">{level.title}</h3>
-                <p className="text-white/70">{level.description}</p>
+                <h3 className="text-xl font-semibold text-[#066779] mb-3">{level.title}</h3>
+                <p className="text-[#1F2933]/70">{level.description}</p>
               </a>
             ))}
           </div>
@@ -377,7 +382,7 @@ export default function DonateAscentPage() {
               size="lg"
               className="bg-[#ff7a27] hover:bg-[#e86a1a] text-white font-semibold px-10 py-6 text-lg rounded-lg transition-all hover:shadow-xl"
             >
-              <a href="https://www.zeffy.com/en-US/donation-form/test-180" target="_blank" rel="noopener noreferrer">Become a Sponsor</a>
+              <a href="https://www.zeffy.com/en-US/donation-form/the-ascent-orlando-military-spouse-gathering" target="_blank" rel="noopener noreferrer">Become a Sponsor</a>
             </Button>
             <TrustIndicator />
           </div>
@@ -444,7 +449,7 @@ export default function DonateAscentPage() {
               size="lg"
               className="bg-[#ff7a27] hover:bg-[#e86a1a] text-white font-semibold px-10 py-6 text-lg rounded-lg transition-all hover:shadow-xl"
             >
-              <a href="https://www.zeffy.com/en-US/donation-form/test-180" target="_blank" rel="noopener noreferrer">Give to the Mission</a>
+              <a href="https://www.zeffy.com/en-US/donation-form/the-ascent-orlando-military-spouse-gathering" target="_blank" rel="noopener noreferrer">Give to the Mission</a>
             </Button>
             <TrustIndicatorDark />
           </div>
@@ -452,8 +457,15 @@ export default function DonateAscentPage() {
       </section>
 
       {/* Why It Matters Section */}
-      <section className="py-24 bg-[#E8F4F5]">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-24 overflow-hidden">
+        <Image
+          src="/images/academy/training-session.jpg"
+          alt="Training session"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-[#E8F4F5]/90" />
+        <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#066779] mb-2">
             Why It Matters
           </h2>
@@ -475,23 +487,16 @@ export default function DonateAscentPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="relative py-24 overflow-hidden">
-        <Image
-          src="/images/academy/conference-peace.jpg"
-          alt="Leadership session"
-          fill
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-[#066779]/85" />
-        <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-24 bg-white">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <Heart className="h-12 w-12 text-[#ff7a27] mx-auto mb-6" />
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#066779] mb-6">
             Make An Impact Today
           </h2>
-          <p className="text-xl text-white/90 mb-4 max-w-2xl mx-auto">
+          <p className="text-xl text-[#1F2933]/80 mb-4 max-w-2xl mx-auto">
             You may never see the full impact of what you give.
           </p>
-          <p className="text-lg text-white/80 mb-10 max-w-xl mx-auto">
+          <p className="text-lg text-[#1F2933]/70 mb-10 max-w-xl mx-auto">
             But a military spouse will feel it. A family will benefit from it. 
             A community will grow because of it.
           </p>
@@ -501,10 +506,10 @@ export default function DonateAscentPage() {
             size="lg"
             className="bg-[#ff7a27] hover:bg-[#e86a1a] text-white font-semibold px-12 py-7 text-xl rounded-lg transition-all hover:shadow-xl"
           >
-            <a href="https://www.zeffy.com/en-US/donation-form/test-180" target="_blank" rel="noopener noreferrer">Donate Now</a>
+            <a href="https://www.zeffy.com/en-US/donation-form/the-ascent-orlando-military-spouse-gathering" target="_blank" rel="noopener noreferrer">Donate Now</a>
           </Button>
           
-          <TrustIndicator />
+          <TrustIndicatorDark />
         </div>
       </section>
     </div>
