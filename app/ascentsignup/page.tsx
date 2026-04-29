@@ -54,7 +54,7 @@ export default function AscentSignupPage() {
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/academy/conference-peace.jpg"
+          src="/images/ascent/mountain-climbers.png"
           alt="ASCENT Spouse Summit"
           fill
           className="object-cover"
@@ -80,30 +80,30 @@ export default function AscentSignupPage() {
           <h1 className="text-5xl sm:text-7xl font-bold text-white mb-4 tracking-tight">
             ASCENT
           </h1>
-          <p className="text-2xl sm:text-3xl text-white/90 font-light mb-2">
+          <p className="text-3xl sm:text-4xl text-white/90 font-light mb-2">
             Spouse Summit
           </p>
           
-          <div className="flex items-center justify-center gap-3 text-[#ff7a27] text-xl sm:text-2xl font-semibold my-8">
+          <div className="flex items-center justify-center gap-3 text-[#ff7a27] text-2xl sm:text-3xl font-semibold my-8">
             <span>Rise</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-[#ff7a27]" />
+            <span className="w-2 h-2 rounded-full bg-[#ff7a27]" />
             <span>Lead</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-[#ff7a27]" />
+            <span className="w-2 h-2 rounded-full bg-[#ff7a27]" />
             <span>Thrive</span>
           </div>
 
-          <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
+          <p className="text-xl sm:text-2xl text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
             Join military spouses from across the country for a three-day leadership experience designed to equip you with the clarity, tools, and community needed to thrive in every season of military life.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-            <div className="flex items-center gap-2 text-white/90">
-              <MapPin className="w-5 h-5 text-[#ff7a27]" />
-              <span>Orlando Hilton</span>
+            <div className="flex items-center gap-2 text-white/90 text-lg">
+              <MapPin className="w-6 h-6 text-[#ff7a27]" />
+              <span className="text-xl font-medium">Orlando, Florida</span>
             </div>
-            <div className="hidden sm:block w-1 h-1 rounded-full bg-white/40" />
-            <div className="flex items-center gap-2 text-white/90">
-              <Calendar className="w-5 h-5 text-[#ff7a27]" />
+            <div className="hidden sm:block w-1.5 h-1.5 rounded-full bg-white/40" />
+            <div className="flex items-center gap-2 text-white/90 text-lg">
+              <Calendar className="w-6 h-6 text-[#ff7a27]" />
               <span>August 9-11, 2026</span>
             </div>
           </div>
@@ -181,10 +181,10 @@ export default function AscentSignupPage() {
           }`}
         >
           <div className="text-center mb-16">
-            <p className="text-xs font-semibold tracking-[0.15em] uppercase mb-4 text-[#ff7a27]">
+            <p className="text-sm font-semibold tracking-[0.15em] uppercase mb-4 text-[#ff7a27]">
               What You&apos;ll Experience
             </p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#0a2540] mb-4">
+            <h2 className="text-4xl sm:text-5xl font-bold text-[#0a2540] mb-4">
               What You&apos;ll Walk Away With
             </h2>
           </div>
@@ -219,14 +219,14 @@ export default function AscentSignupPage() {
             <div className="order-2 lg:order-1 relative">
               <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/ascent/orlando-skyline.jpg"
-                  alt="Orlando, Florida"
+                  src="/images/ascent/orlando-aerial.png"
+                  alt="Orlando, Florida aerial view"
                   fill
                   className="object-cover"
                 />
               </div>
-              <div className="absolute -top-4 -right-4 bg-[#ff7a27] text-white px-6 py-3 rounded-full shadow-lg">
-                <p className="text-sm font-semibold">Orlando, FL</p>
+              <div className="absolute -top-4 -right-4 bg-[#ff7a27] text-white px-8 py-4 rounded-full shadow-lg">
+                <p className="text-lg font-semibold">Orlando, Florida</p>
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -256,32 +256,54 @@ export default function AscentSignupPage() {
       </section>
 
       {/* Event Details Section */}
-      <section className="py-20 sm:py-28 bg-[#066779]">
+      <section className="py-20 sm:py-28 relative overflow-hidden">
+        <Image
+          src="/images/ascent/orlando-night.png"
+          alt="Orlando at night"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-[#0a2540]/75" />
         <div
           ref={detailsReveal.ref}
-          className={`mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 transition-all duration-700 ${
+          className={`relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 transition-all duration-700 ${
             detailsReveal.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
+          {/* Logo above section */}
+          <div className="flex justify-center mb-8">
+            <Image
+              src="/images/mfi-shield-logo-transparent.png"
+              alt="Military Family Institute"
+              width={56}
+              height={56}
+            />
+          </div>
           <div className="text-center mb-12">
-            <p className="text-xs font-semibold tracking-[0.15em] uppercase mb-4 text-[#ff7a27]">
+            <p className="text-lg font-semibold tracking-[0.15em] uppercase mb-4 text-[#ff7a27]">
               Event Details
             </p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
               Mark Your Calendar
             </h2>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
             {[
-              { label: "Location", value: "Orlando Hilton" },
-              { label: "Dates", value: "Aug 9-11, 2026" },
-              { label: "Registration", value: "Open Now" },
-              { label: "Agenda", value: "Coming Soon" },
+              { label: "Location", value: "Orlando Hilton", link: null },
+              { label: "Dates", value: "Aug 9-11, 2026", link: null },
+              { label: "Registration", value: "Open Now", link: "/ascentregister" },
+              { label: "Agenda", value: "Coming Soon", link: null },
             ].map((item) => (
               <div key={item.label} className="bg-white rounded-2xl p-6 shadow-md">
                 <p className="text-[#0a2540]/60 text-sm mb-2">{item.label}</p>
-                <p className="text-[#0a2540] text-xl font-semibold">{item.value}</p>
+                {item.link ? (
+                  <Link href={item.link} className="text-[#ff7a27] text-xl font-semibold hover:underline">
+                    {item.value}
+                  </Link>
+                ) : (
+                  <p className="text-[#0a2540] text-xl font-semibold">{item.value}</p>
+                )}
               </div>
             ))}
           </div>
@@ -296,6 +318,15 @@ export default function AscentSignupPage() {
             whyReveal.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
+          {/* Logo above section */}
+          <div className="flex justify-center mb-6">
+            <Image
+              src="/images/mfi-shield-logo-transparent.png"
+              alt="Military Family Institute"
+              width={56}
+              height={56}
+            />
+          </div>
           <p className="text-xs font-semibold tracking-[0.15em] uppercase mb-4 text-[#ff7a27]">
             Why ASCENT
           </p>
@@ -338,12 +369,12 @@ export default function AscentSignupPage() {
             ctaReveal.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-            <Sparkles className="w-4 h-4 text-[#ff7a27]" />
-            <span className="text-white/90 text-sm font-medium">Limited Spots Available</span>
+          <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 mb-6">
+            <Sparkles className="w-5 h-5 text-[#ff7a27]" />
+            <span className="text-white/90 text-lg font-semibold">Limited Spots Available</span>
           </div>
           
-          <h2 className="text-3xl sm:text-5xl font-bold text-white mb-6 leading-tight">
+          <h2 className="text-4xl sm:text-6xl font-bold text-white mb-6 leading-tight">
             Be Part of the First ASCENT Summit
           </h2>
           <p className="text-xl text-white/80 mb-10 max-w-xl mx-auto">
