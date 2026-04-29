@@ -310,8 +310,99 @@ export default function AscentSignupPage() {
         </div>
       </section>
 
-      {/* Why ASCENT Section */}
+      {/* Part of the AFSA Summit Experience Section */}
       <section className="py-20 sm:py-28 bg-white">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-xs font-semibold tracking-[0.15em] uppercase mb-4 text-[#ff7a27]">
+              Part of Something Bigger
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#0a2540] mb-6">
+              Part of the AFSA Summit Experience
+            </h2>
+            <p className="text-lg text-[#1F2933]/70 max-w-2xl mx-auto leading-relaxed">
+              The ASCENT Spouse Summit takes place alongside the Air & Space Forces Association Summit, giving participants access to a broader national leadership environment, professional expo resources, and partner organizations supporting military families.
+            </p>
+          </div>
+
+          {/* AFSA Partnership */}
+          <div className="bg-[#f7f8fa] rounded-2xl p-8 text-center mb-10">
+            <p className="text-sm text-[#1F2933]/60 mb-4">Hosted in partnership with</p>
+            <Link href="https://www.hqafsa.org/summit26.html" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/images/partners/summit-365.png"
+                alt="Air & Space Forces Association Summit 2026"
+                width={200}
+                height={80}
+                className="mx-auto hover:opacity-80 transition-opacity"
+              />
+            </Link>
+          </div>
+
+          {/* Links Grid */}
+          <div className="grid sm:grid-cols-2 gap-4">
+            <Link
+              href="https://www.hqafsa.org/summit26.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 p-5 bg-white rounded-xl border border-[#E2E8F0] hover:border-[#066779] hover:shadow-md transition-all group"
+            >
+              <div className="w-10 h-10 rounded-lg bg-[#066779]/10 flex items-center justify-center group-hover:bg-[#066779]/20 transition-colors">
+                <ArrowRight className="w-5 h-5 text-[#066779]" />
+              </div>
+              <div>
+                <p className="font-semibold text-[#0a2540]">AFSA Summit 2026</p>
+                <p className="text-sm text-[#1F2933]/60">Event details & schedule</p>
+              </div>
+            </Link>
+            <Link
+              href="https://www.hqafsa.org/afsa_summit26_sponsor_exhibitor_info.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 p-5 bg-white rounded-xl border border-[#E2E8F0] hover:border-[#066779] hover:shadow-md transition-all group"
+            >
+              <div className="w-10 h-10 rounded-lg bg-[#066779]/10 flex items-center justify-center group-hover:bg-[#066779]/20 transition-colors">
+                <ArrowRight className="w-5 h-5 text-[#066779]" />
+              </div>
+              <div>
+                <p className="font-semibold text-[#0a2540]">Sponsor / Exhibitor Info</p>
+                <p className="text-sm text-[#1F2933]/60">Download the PDF</p>
+              </div>
+            </Link>
+            <Link
+              href="https://www.hilton.com/en/hotels/mcaborlhh-hilton-orlando/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 p-5 bg-white rounded-xl border border-[#E2E8F0] hover:border-[#066779] hover:shadow-md transition-all group"
+            >
+              <div className="w-10 h-10 rounded-lg bg-[#066779]/10 flex items-center justify-center group-hover:bg-[#066779]/20 transition-colors">
+                <ArrowRight className="w-5 h-5 text-[#066779]" />
+              </div>
+              <div>
+                <p className="font-semibold text-[#0a2540]">Hilton Host Hotel</p>
+                <p className="text-sm text-[#1F2933]/60">Policies & information</p>
+              </div>
+            </Link>
+            <Link
+              href="https://book.passkey.com/event/51219755/owner/213/home"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 p-5 bg-white rounded-xl border border-[#E2E8F0] hover:border-[#066779] hover:shadow-md transition-all group"
+            >
+              <div className="w-10 h-10 rounded-lg bg-[#066779]/10 flex items-center justify-center group-hover:bg-[#066779]/20 transition-colors">
+                <ArrowRight className="w-5 h-5 text-[#066779]" />
+              </div>
+              <div>
+                <p className="font-semibold text-[#0a2540]">Overflow Hotel</p>
+                <p className="text-sm text-[#1F2933]/60">Book alternate accommodations</p>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Why ASCENT Section */}
+      <section className="py-20 sm:py-28 bg-[#f7f8fa]">
         <div
           ref={whyReveal.ref}
           className={`mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center transition-all duration-700 ${
@@ -349,19 +440,19 @@ export default function AscentSignupPage() {
       </section>
 
       {/* Final CTA Section */}
-      <section id="register" className="py-24 sm:py-32 bg-gradient-to-br from-[#0a2540] to-[#066779] relative overflow-hidden">
-        {/* Subtle background texture - faded to 30% */}
-        <div 
-          className="absolute inset-0 opacity-[0.008]"
-          style={{ 
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.3'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-          }}
+      <section id="register" className="py-24 sm:py-32 relative overflow-hidden">
+        {/* Background image - Yolanda teaching */}
+        <Image
+          src="/images/academy/conference-peace.jpg"
+          alt="Leadership training session"
+          fill
+          className="object-cover"
         />
+        {/* Dark teal overlay */}
+        <div className="absolute inset-0 bg-[#066779]/85" />
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-[#ff7a27]/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#066779]/30 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
-        {/* Soft blurred accent */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[#ff7a27]/5 rounded-full blur-3xl" />
         
         <div
           ref={ctaReveal.ref}

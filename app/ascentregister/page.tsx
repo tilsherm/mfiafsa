@@ -1,4 +1,5 @@
 import Script from "next/script"
+import Image from "next/image"
 
 export const metadata = {
   title: "Register for ASCENT | Military Family Institute",
@@ -7,17 +8,25 @@ export const metadata = {
 
 export default function AscentRegisterPage() {
   return (
-    <div className="bg-[#FAFBFC] min-h-screen pt-20">
-      {/* Header */}
-      <section className="py-12 sm:py-16 bg-white border-b border-[#E2E8F0]">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-xs font-semibold tracking-[0.15em] uppercase mb-4 text-[#ff7a27]">
+    <div className="bg-[#FAFBFC] min-h-screen">
+      {/* Header with background image */}
+      <section className="relative pt-28 pb-16 sm:pt-32 sm:pb-20 overflow-hidden">
+        <Image
+          src="/images/academy/conference-peace.jpg"
+          alt="Leadership training session"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-[#066779]/80" />
+        <div className="relative z-10 mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-sm font-semibold tracking-[0.15em] uppercase mb-4 text-[#ff7a27]">
             August 9-11, 2026 | Orlando Hilton
           </p>
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#066779] mb-4 text-balance">
+          <h1 className="text-3xl sm:text-5xl font-bold text-white mb-4 text-balance">
             Register for the 2026 ASCENT Spouse Summit
           </h1>
-          <p className="text-[#1F2933]/70 text-lg">
+          <p className="text-white/80 text-lg">
             Complete the form below to reserve your seat at our inaugural summit.
           </p>
         </div>
