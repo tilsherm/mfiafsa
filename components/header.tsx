@@ -27,8 +27,8 @@ const eventsDropdown = [
 ]
 
 const donateDropdown = [
-  { label: "Support Military Families", href: "/donate" },
-  { label: "Sponsor a Spouse", href: "/donate-ascent" },
+  { label: "Support MFI", href: "/donate" },
+  { label: "Support ASCENT", href: "/donate-ascent" },
 ]
 
 export function Header() {
