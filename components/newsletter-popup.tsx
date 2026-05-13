@@ -63,9 +63,9 @@ export function NewsletterPopup() {
           {/* Form Container */}
           <div className="p-6">
             <iframe
-              src="https://client.agdashboard.com/widget/form/KsFaCPz6ttozthFxQurs"
+              src="https://client.agdashboard.com/widget/form/Hfd5En42HlnVSOXvCQEx"
               style={{ width: "100%", height: "450px", border: "none", borderRadius: "3px" }}
-              id="inline-KsFaCPz6ttozthFxQurs"
+              id="inline-Hfd5En42HlnVSOXvCQEx"
               data-layout='{"id":"INLINE"}'
               data-trigger-type="alwaysShow"
               data-trigger-value=""
@@ -74,9 +74,9 @@ export function NewsletterPopup() {
               data-deactivation-type="neverDeactivate"
               data-deactivation-value=""
               data-form-name="MFI Newsletter"
-              data-height="567"
-              data-layout-iframe-id="inline-KsFaCPz6ttozthFxQurs"
-              data-form-id="KsFaCPz6ttozthFxQurs"
+              data-height="undefined"
+              data-layout-iframe-id="inline-Hfd5En42HlnVSOXvCQEx"
+              data-form-id="Hfd5En42HlnVSOXvCQEx"
               title="MFI Newsletter"
             />
           </div>

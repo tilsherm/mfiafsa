@@ -41,9 +41,9 @@ export default function ContactPage() {
           {/* Embedded Contact Form */}
           <div className="max-w-2xl mx-auto min-h-[660px]">
             <iframe
-              src="https://client.agdashboard.com/widget/form/82zDTdnXKeP8wPUabCu2"
+              src="https://client.agdashboard.com/widget/form/Q9C5tbwlcjIuKLwv15rb"
               style={{ width: "100%", height: "644px", border: "none", borderRadius: "3px" }}
-              id="inline-82zDTdnXKeP8wPUabCu2"
+              id="inline-Q9C5tbwlcjIuKLwv15rb"
               data-layout="{'id':'INLINE'}"
               data-trigger-type="alwaysShow"
               data-trigger-value=""
@@ -52,9 +52,9 @@ export default function ContactPage() {
               data-deactivation-type="neverDeactivate"
               data-deactivation-value=""
               data-form-name="MFI CONTACT"
-              data-height="644"
-              data-layout-iframe-id="inline-82zDTdnXKeP8wPUabCu2"
-              data-form-id="82zDTdnXKeP8wPUabCu2"
+              data-height="undefined"
+              data-layout-iframe-id="inline-Q9C5tbwlcjIuKLwv15rb"
+              data-form-id="Q9C5tbwlcjIuKLwv15rb"
               title="MFI CONTACT"
             />
             <Script
