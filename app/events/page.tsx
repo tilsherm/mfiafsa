@@ -10,7 +10,6 @@ export const metadata: Metadata = {
 }
 
 const msaDates = [
-  "May 21",
   "June 18",
   "July 16",
   "August 20",
