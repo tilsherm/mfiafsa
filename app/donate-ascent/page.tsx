@@ -225,7 +225,7 @@ export default function DonateAscentPage() {
               </div>
               <div className="flex items-center gap-2 text-[#066779]">
                 <Calendar className="w-5 h-5 text-[#ff7a27]" />
-                <span className="font-medium">August 9-11, 2026</span>
+                <span className="font-medium">August 10-12, 2026</span>
               </div>
             </div>
 

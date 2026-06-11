@@ -66,7 +66,7 @@ export default function AscentSignupPage() {
         <div className="hidden md:block absolute top-32 right-8 md:right-16 z-20">
           <div className="bg-white/95 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-xl">
             <p className="text-xs font-semibold text-[#ff7a27] uppercase tracking-wider">Save the Date</p>
-            <p className="text-2xl font-bold text-[#0a2540]">Aug 9-11</p>
+            <p className="text-2xl font-bold text-[#0a2540]">Aug 10-12</p>
             <p className="text-sm text-[#066779]">2026</p>
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function AscentSignupPage() {
             <div className="hidden sm:block w-1.5 h-1.5 rounded-full bg-white/40" />
             <div className="flex items-center gap-2 text-white/90 text-lg">
               <Calendar className="w-6 h-6 text-[#ff7a27]" />
-              <span>August 9-11, 2026</span>
+              <span>August 10-12, 2026</span>
             </div>
           </div>
 
@@ -290,7 +290,7 @@ export default function AscentSignupPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
             {[
               { label: "Location", value: "Orlando Hilton", link: null },
-              { label: "Dates", value: "Aug 9-11, 2026", link: null },
+              { label: "Dates", value: "Aug 10-12, 2026", link: null },
               { label: "Registration", value: "Open Now", link: "/ascentregister" },
               { label: "Agenda", value: "Coming Soon", link: null },
             ].map((item) => (

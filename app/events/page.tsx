@@ -126,7 +126,7 @@ export default function EventsPage() {
             </p>
             <div className="inline-flex items-center justify-center rounded-xl bg-white/10 border border-white/20 py-4 px-8 mb-8">
               <span className="text-white font-semibold text-lg sm:text-xl">
-                August 9-11, 2026
+                August 10-12, 2026
               </span>
             </div>
             <div className="flex justify-center">
