@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export const metadata = {
   title: "Register for ASCENT | Military Family Institute",
-  description: "Register for the 2026 ASCENT Spouse Gathering - August 9-11, Orlando Hilton",
+  description: "Register for the 2026 ASCENT Spouse Gathering - August 10-12, Orlando Hilton",
 }
 
 export default function AscentRegisterPage() {
@@ -23,7 +23,7 @@ export default function AscentRegisterPage() {
         <div className="absolute inset-0 bg-[#066779]/80" />
         <div className="relative z-10 mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-sm font-semibold tracking-[0.15em] uppercase mb-4 text-[#ff7a27]">
-            August 9-11, 2026 | Orlando Hilton
+              August 10-12, 2026 | Orlando Hilton
           </p>
           <h1 className="text-3xl sm:text-5xl font-bold text-white mb-4 text-balance">
             Register for the 2026 ASCENT Spouse Gathering
