@@ -24,17 +24,33 @@ export default function AscentThankYouPage() {
           </h1>
           <div className="text-lg text-[#1F2933]/80 leading-relaxed mb-10 space-y-4">
             <p>We&apos;ve successfully received your registration.</p>
-            <p>
-              A member of our team will be reaching out to you shortly with the
-              next steps.
+            <p className="text-xl font-semibold text-[#066779]">
+              Important: Check Your Email
             </p>
             <p>
-              You will also receive a confirmation email from{" "}
-              <strong className="text-[#066779]">info@militaryfamilyinstitute.org</strong>. If you don&apos;t see it
-              within a few minutes, please check your spam or junk folder. To
-              ensure you receive future communications, please add{" "}
-              <strong className="text-[#066779]">info@militaryfamilyinstitute.org</strong> to your safe senders or
-              contacts list.
+              A confirmation email from{" "}
+              <a
+                href="mailto:info@militaryfamilyinstitute.org"
+                className="text-[#ff7a27] font-semibold hover:underline"
+              >
+                info@militaryfamilyinstitute.org
+              </a>{" "}
+              is on its way.
+            </p>
+            <p>
+              If you don&apos;t see it within a few minutes, please check your
+              Spam or Junk folder and add{" "}
+              <a
+                href="mailto:info@militaryfamilyinstitute.org"
+                className="text-[#ff7a27] font-semibold hover:underline"
+              >
+                info@militaryfamilyinstitute.org
+              </a>{" "}
+              to your safe senders or contacts list.
+            </p>
+            <p>
+              A member of our team will also be reaching out soon with your next
+              steps.
             </p>
             <p>
               If you have any questions in the meantime, please don&apos;t
