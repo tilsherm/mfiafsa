@@ -309,13 +309,12 @@ export default function AscentSignupPage() {
               <p className="text-[#0a2540]/60 text-sm mb-2">Agenda</p>
               <a
                 href="/ascent-2026-agenda.pdf"
-                download
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-[#ff7a27] text-xl font-semibold hover:underline"
               >
                 <Download className="w-4 h-4" />
-                Download PDF
+                View PDF
               </a>
             </div>
           </div>
