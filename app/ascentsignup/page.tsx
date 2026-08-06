@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { MapPin, Calendar, Users, Sparkles, Heart, Target, Mountain, ArrowRight, Check, Handshake } from "lucide-react"
+import { MapPin, Calendar, Users, Sparkles, Heart, Target, Mountain, ArrowRight, Check, Handshake, Download, Mail, X } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
 function useReveal() {
@@ -48,6 +48,7 @@ export default function AscentSignupPage() {
   const detailsReveal = useReveal()
   const whyReveal = useReveal()
   const ctaReveal = useReveal()
+  const [isClosedModalOpen, setIsClosedModalOpen] = useState(false)
 
   return (
     <div className="bg-[#FAFBFC] min-h-screen">
@@ -109,14 +110,12 @@ export default function AscentSignupPage() {
           </div>
 
           <Button
-            asChild
             size="lg"
+            onClick={() => setIsClosedModalOpen(true)}
             className="bg-[#ff7a27] hover:bg-[#e86a1a] text-white font-semibold px-10 py-6 text-lg rounded-md shadow-xl hover:shadow-2xl transition-all"
           >
-            <Link href="/ascentregister">
-              Register Now
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Link>
+            Register Now
+            <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
         </div>
 
@@ -288,23 +287,37 @@ export default function AscentSignupPage() {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-            {[
-              { label: "Location", value: "Orlando Hilton", link: null },
-              { label: "Dates", value: "Aug 10-12, 2026", link: null },
-              { label: "Registration", value: "Open Now", link: "/ascentregister" },
-              { label: "Agenda", value: "Coming Soon", link: null },
-            ].map((item) => (
-              <div key={item.label} className="bg-white rounded-2xl p-6 shadow-md">
-                <p className="text-[#0a2540]/60 text-sm mb-2">{item.label}</p>
-                {item.link ? (
-                  <Link href={item.link} className="text-[#ff7a27] text-xl font-semibold hover:underline">
-                    {item.value}
-                  </Link>
-                ) : (
-                  <p className="text-[#0a2540] text-xl font-semibold">{item.value}</p>
-                )}
-              </div>
-            ))}
+            <div className="bg-white rounded-2xl p-6 shadow-md">
+              <p className="text-[#0a2540]/60 text-sm mb-2">Location</p>
+              <p className="text-[#0a2540] text-xl font-semibold">Orlando Hilton</p>
+            </div>
+            <div className="bg-white rounded-2xl p-6 shadow-md">
+              <p className="text-[#0a2540]/60 text-sm mb-2">Dates</p>
+              <p className="text-[#0a2540] text-xl font-semibold">Aug 10-12, 2026</p>
+            </div>
+            <div className="bg-white rounded-2xl p-6 shadow-md">
+              <p className="text-[#0a2540]/60 text-sm mb-2">Registration</p>
+              <button
+                type="button"
+                onClick={() => setIsClosedModalOpen(true)}
+                className="text-[#ff7a27] text-xl font-semibold hover:underline"
+              >
+                Closed
+              </button>
+            </div>
+            <div className="bg-white rounded-2xl p-6 shadow-md">
+              <p className="text-[#0a2540]/60 text-sm mb-2">Agenda</p>
+              <a
+                href="/ascent-2026-agenda.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-[#ff7a27] text-xl font-semibold hover:underline"
+              >
+                <Download className="w-4 h-4" />
+                Download PDF
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -548,14 +561,12 @@ export default function AscentSignupPage() {
           </p>
           
           <Button
-            asChild
             size="lg"
+            onClick={() => setIsClosedModalOpen(true)}
             className="bg-[#ff7a27] hover:bg-[#e86a1a] text-white font-semibold px-10 py-6 text-lg rounded-md shadow-xl hover:shadow-2xl transition-all"
           >
-            <Link href="/ascentregister">
-              Reserve Your Seat Today
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Link>
+            Reserve Your Seat Today
+            <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
           
           <p className="mt-8 text-white/50 text-sm">
@@ -563,6 +574,69 @@ export default function AscentSignupPage() {
           </p>
         </div>
       </section>
+
+      {/* Registration Closed Modal */}
+      {isClosedModalOpen && (
+        <>
+          {/* Backdrop */}
+          <div
+            className="fixed inset-0 bg-black/50 z-50 animate-[fadeIn_0.3s_ease-out]"
+            onClick={() => setIsClosedModalOpen(false)}
+          />
+
+          {/* Modal */}
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none">
+            <div
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="registration-closed-title"
+              className="relative bg-white rounded-2xl shadow-2xl max-w-md w-full overflow-hidden pointer-events-auto animate-[slideUp_0.3s_ease-out]"
+            >
+              {/* Close button */}
+              <button
+                type="button"
+                onClick={() => setIsClosedModalOpen(false)}
+                className="absolute top-4 right-4 z-10 p-2 rounded-full hover:bg-gray-100 transition-colors"
+                aria-label="Close dialog"
+              >
+                <X className="w-5 h-5 text-gray-500" />
+              </button>
+
+              <div className="px-6 py-8 text-center">
+                <div className="mx-auto w-14 h-14 rounded-full bg-[#ff7a27]/10 flex items-center justify-center mb-4">
+                  <Mail className="w-7 h-7 text-[#ff7a27]" />
+                </div>
+                <h2 id="registration-closed-title" className="text-2xl font-bold text-[#0a2540] mb-3">
+                  Registration Is Closed
+                </h2>
+                <p className="text-base text-[#1F2933]/70 mb-6 leading-relaxed">
+                  Registration for the event is now closed. Please email us if you need assistance.
+                </p>
+                <Button
+                  asChild
+                  className="w-full bg-[#ff7a27] hover:bg-[#e86a1a] text-white font-semibold rounded-lg"
+                >
+                  <a href="mailto:info@militaryfamilyinstitute.org">
+                    <Mail className="mr-2 w-4 h-4" />
+                    info@militaryfamilyinstitute.org
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </div>
+
+          <style jsx global>{`
+            @keyframes fadeIn {
+              from { opacity: 0; }
+              to { opacity: 1; }
+            }
+            @keyframes slideUp {
+              from { opacity: 0; transform: translateY(20px); }
+              to { opacity: 1; transform: translateY(0); }
+            }
+          `}</style>
+        </>
+      )}
     </div>
   )
 }
