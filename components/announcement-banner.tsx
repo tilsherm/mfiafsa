@@ -29,7 +29,7 @@ export function AnnouncementBanner() {
     >
       <div className="mx-auto max-w-7xl flex items-center justify-center text-center">
         <p className="text-sm sm:text-base font-medium group-hover:underline">
-          Limited seats available for the 2026 ASCENT Spouse Gathering in Orlando - Learn More
+          Registration is now closed for the 2026 ASCENT Spouse Gathering in Orlando - Learn More
         </p>
         <button
           type="button"
