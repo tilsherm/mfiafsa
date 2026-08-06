@@ -309,13 +309,12 @@ export default function AscentSignupPage() {
               <p className="text-[#0a2540]/60 text-sm mb-2">Agenda</p>
               <a
                 href="/ascent-2026-agenda.pdf"
-                download
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-[#ff7a27] text-xl font-semibold hover:underline"
               >
                 <Download className="w-4 h-4" />
-                Download PDF
+                View PDF
               </a>
             </div>
           </div>
@@ -367,8 +366,8 @@ export default function AscentSignupPage() {
                 <p className="text-sm text-[#1F2933]/60">Event details & schedule</p>
               </div>
             </Link>
-            <Link
-              href="https://www.hqafsa.org/uploads/3/8/9/1/38911523/afsa_summit26_sponsor_exhibitor_info.pdf"
+            <a
+              href="/ascent-2026-agenda.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-5 bg-white rounded-xl border border-[#E2E8F0] hover:border-[#ff7a27] hover:shadow-md transition-all group"
@@ -378,9 +377,9 @@ export default function AscentSignupPage() {
               </div>
               <div>
                 <p className="font-semibold text-[#0a2540]">Sponsor / Exhibitor Info</p>
-                <p className="text-sm text-[#1F2933]/60">Download the PDF</p>
+                <p className="text-sm text-[#1F2933]/60">View PDF</p>
               </div>
-            </Link>
+            </a>
             <Link
               href="https://thehiltonorlando.com/about/hotel-policies-information/"
               target="_blank"
