@@ -34,9 +34,7 @@ const teamMembersTopRow = [
   { name: "Amanda Lindsey-Boor", role: "Instructor", image: "/images/ambassadors/amanda-lindsey-boor.jpg" },
 ]
 
-const teamMembersBottomRow = [
-  { name: "Milt Lutton", role: "Instructor", image: "/images/ambassadors/milt-lutton.jpg" },
-]
+const teamMembersBottomRow = []
 
 const faqs = [
   {
