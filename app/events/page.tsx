@@ -10,17 +10,11 @@ export const metadata: Metadata = {
 }
 
 const msaDates = [
-  "August 20",
-  "September 17",
   "October 15",
   "November 19",
 ]
 
 const cohorts = [
-  {
-    label: "Cohort A",
-    dates: ["Jun 9 & 23", "Jul 7 & 21", "Aug 4 & 18"],
-  },
   {
     label: "Cohort B",
     dates: ["Sep 1 & 15", "Oct 6 & 20", "Nov 2 & 17"],

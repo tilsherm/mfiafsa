@@ -36,7 +36,6 @@ const teamMembersTopRow = [
 
 const teamMembersBottomRow = [
   { name: "Milt Lutton", role: "Instructor", image: "/images/ambassadors/milt-lutton.jpg" },
-  { name: "Katie Rojas", role: "Social Media Manager", image: "/images/ambassadors/katie-rojas.jpg" },
 ]
 
 const faqs = [
