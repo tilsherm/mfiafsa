@@ -34,7 +34,7 @@ const teamMembersTopRow = [
   { name: "Amanda Lindsey-Boor", role: "Instructor", image: "/images/ambassadors/amanda-lindsey-boor.jpg" },
 ]
 
-const teamMembersBottomRow = []
+const teamMembersBottomRow: typeof teamMembersTopRow = []
 
 const faqs = [
   {

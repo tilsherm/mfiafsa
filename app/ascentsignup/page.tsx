@@ -52,6 +52,18 @@ export default function AscentSignupPage() {
 
   return (
     <div className="bg-[#FAFBFC] min-h-screen">
+      <aside
+        role="status"
+        className="border-b-4 border-[#ff7a27] bg-[#0a2540] px-4 pt-20 pb-4 text-center text-white sm:pb-5"
+      >
+        <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#ffb27e]">
+          ASCENT Spouse Gathering · Event Update
+        </p>
+        <p className="mt-1 text-lg font-semibold sm:text-xl">
+          This Event Is Now Closed
+        </p>
+      </aside>
+
       {/* Hero Section */}
       <section className="relative min-h-screen pt-28 pb-20 flex items-center justify-center overflow-hidden">
         <Image
@@ -66,7 +78,7 @@ export default function AscentSignupPage() {
         {/* Floating date badge - hidden on mobile */}
         <div className="hidden md:block absolute top-32 right-8 md:right-16 z-20">
           <div className="bg-white/95 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-xl">
-            <p className="text-xs font-semibold text-[#ff7a27] uppercase tracking-wider">Save the Date</p>
+            <p className="text-xs font-semibold text-[#ff7a27] uppercase tracking-wider">Registration Closed</p>
             <p className="text-2xl font-bold text-[#0a2540]">Aug 10-12</p>
             <p className="text-sm text-[#066779]">2026</p>
           </div>
@@ -114,8 +126,7 @@ export default function AscentSignupPage() {
             onClick={() => setIsClosedModalOpen(true)}
             className="bg-[#ff7a27] hover:bg-[#e86a1a] text-white font-semibold px-10 py-6 text-lg rounded-md shadow-xl hover:shadow-2xl transition-all"
           >
-            Register Now
-            <ArrowRight className="ml-2 w-5 h-5" />
+            Registration Closed
           </Button>
         </div>
 
@@ -302,7 +313,7 @@ export default function AscentSignupPage() {
                 onClick={() => setIsClosedModalOpen(true)}
                 className="text-[#ff7a27] text-xl font-semibold hover:underline"
               >
-                Closed
+                Registration Closed
               </button>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-md">
@@ -549,7 +560,7 @@ export default function AscentSignupPage() {
         >
           <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 mb-6">
             <Sparkles className="w-5 h-5 text-[#ff7a27]" />
-            <span className="text-white/90 text-lg font-semibold">Limited Spots Available</span>
+            <span className="text-white/90 text-lg font-semibold">Registration Closed</span>
           </div>
           
           <h2 className="text-4xl sm:text-6xl font-bold text-white mb-6 leading-tight">
@@ -564,8 +575,7 @@ export default function AscentSignupPage() {
             onClick={() => setIsClosedModalOpen(true)}
             className="bg-[#ff7a27] hover:bg-[#e86a1a] text-white font-semibold px-10 py-6 text-lg rounded-md shadow-xl hover:shadow-2xl transition-all"
           >
-            Reserve Your Seat Today
-            <ArrowRight className="ml-2 w-5 h-5" />
+            Registration Closed
           </Button>
           
           <p className="mt-8 text-white/50 text-sm">
