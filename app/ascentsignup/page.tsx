@@ -54,12 +54,12 @@ export default function AscentSignupPage() {
     <div className="bg-[#FAFBFC] min-h-screen">
       <aside
         role="status"
-        className="border-b-4 border-[#ff7a27] bg-[#0a2540] px-4 pt-20 pb-4 text-center text-white sm:pb-5"
+        className="mt-20 border-y-4 border-[#ff7a27] bg-[#0a2540] px-4 py-6 text-center text-white shadow-md sm:py-7"
       >
-        <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#ffb27e]">
+        <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#ffb27e] sm:text-base">
           ASCENT Spouse Gathering · Event Update
         </p>
-        <p className="mt-1 text-lg font-semibold sm:text-xl">
+        <p className="mt-2 text-2xl font-bold leading-tight text-white sm:text-3xl">
           This Event Is Now Closed
         </p>
       </aside>

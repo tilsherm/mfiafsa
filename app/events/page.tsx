@@ -17,7 +17,7 @@ const msaDates = [
 const cohorts = [
   {
     label: "Cohort B",
-    dates: ["Sep 1 & 15", "Oct 6 & 20", "Nov 2 & 17"],
+    dates: ["Oct 6 & 20", "Nov 2 & 17"],
   },
 ]
 
@@ -66,11 +66,11 @@ export default function EventsPage() {
               Our flagship leadership program for military spouses.
             </p>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10">
+            <div className="flex flex-wrap justify-center gap-3 mb-10">
               {msaDates.map((date) => (
                 <div
                   key={date}
-                  className="flex items-center justify-center rounded-xl bg-[#066779]/5 border border-[#066779]/10 py-4 px-3"
+                  className="flex w-full max-w-56 items-center justify-center rounded-xl bg-[#066779]/5 border border-[#066779]/10 py-4 px-3"
                 >
                   <span className="text-[#066779] font-semibold text-sm sm:text-base">
                     {date}
