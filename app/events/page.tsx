@@ -10,20 +10,14 @@ export const metadata: Metadata = {
 }
 
 const msaDates = [
-  "August 20",
-  "September 17",
   "October 15",
   "November 19",
 ]
 
 const cohorts = [
   {
-    label: "Cohort A",
-    dates: ["Jun 9 & 23", "Jul 7 & 21", "Aug 4 & 18"],
-  },
-  {
     label: "Cohort B",
-    dates: ["Sep 1 & 15", "Oct 6 & 20", "Nov 2 & 17"],
+    dates: ["Oct 6 & 20", "Nov 2 & 17"],
   },
 ]
 
@@ -72,11 +66,11 @@ export default function EventsPage() {
               Our flagship leadership program for military spouses.
             </p>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10">
+            <div className="flex flex-wrap justify-center gap-3 mb-10">
               {msaDates.map((date) => (
                 <div
                   key={date}
-                  className="flex items-center justify-center rounded-xl bg-[#066779]/5 border border-[#066779]/10 py-4 px-3"
+                  className="flex w-full max-w-56 items-center justify-center rounded-xl bg-[#066779]/5 border border-[#066779]/10 py-4 px-3"
                 >
                   <span className="text-[#066779] font-semibold text-sm sm:text-base">
                     {date}
@@ -122,10 +116,15 @@ export default function EventsPage() {
             <p className="text-white/70 mb-6">
               A 3-day immersive leadership experience for military spouses.
             </p>
-            <div className="inline-flex items-center justify-center rounded-xl bg-white/10 border border-white/20 py-4 px-8 mb-8">
-              <span className="text-white font-semibold text-lg sm:text-xl">
-                August 10-12, 2026
+            <div className="mb-8 flex flex-col items-center gap-3">
+              <span className="inline-flex items-center rounded-full border border-[#ff7a27]/50 bg-[#ff7a27]/15 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.16em] text-[#ffb27e]">
+                Event Now Closed
               </span>
+              <div className="inline-flex items-center justify-center rounded-xl bg-white/10 border border-white/20 py-4 px-8">
+                <span className="text-white/75 font-semibold text-lg sm:text-xl line-through decoration-[#ff7a27] decoration-2">
+                  August 10-12, 2026
+                </span>
+              </div>
             </div>
             <div className="flex justify-center">
               <Button

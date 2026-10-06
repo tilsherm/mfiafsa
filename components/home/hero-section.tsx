@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { AnnouncementBanner } from "@/components/announcement-banner"
 
 export function HeroSection() {
   return (
@@ -26,11 +25,6 @@ export function HeroSection() {
         className="absolute bottom-0 left-0 right-0 h-32"
         style={{ background: 'linear-gradient(to top, #ffffff, transparent)' }}
       />
-
-      {/* Announcement Banner - at top of hero, below header */}
-      <div className="relative z-20 pt-20">
-        <AnnouncementBanner />
-      </div>
 
       {/* Hero Content Container */}
       <div className="flex-1 flex items-center justify-center relative z-10">

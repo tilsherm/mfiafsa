@@ -34,10 +34,7 @@ const teamMembersTopRow = [
   { name: "Amanda Lindsey-Boor", role: "Instructor", image: "/images/ambassadors/amanda-lindsey-boor.jpg" },
 ]
 
-const teamMembersBottomRow = [
-  { name: "Milt Lutton", role: "Instructor", image: "/images/ambassadors/milt-lutton.jpg" },
-  { name: "Katie Rojas", role: "Social Media Manager", image: "/images/ambassadors/katie-rojas.jpg" },
-]
+const teamMembersBottomRow: typeof teamMembersTopRow = []
 
 const faqs = [
   {
